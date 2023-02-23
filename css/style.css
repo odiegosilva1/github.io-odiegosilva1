@@ -1,0 +1,59 @@
+* body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+ }
+
+.header {
+    display: flex;
+    background-color: yellow;
+    align-items: center;
+}
+
+#about {
+    display: flex;
+    background-color: blueviolet;
+}
+
+#banner {
+    display: flexbox;
+    background-color: tomato;
+}
+
+#banner img {
+    width: 25%;
+    border-radius: 50%;
+    
+}
+
+ul li {
+   display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  
+}
+
+h1 {
+
+    padding: 10;
+    margin: 1rem;
+    
+}
+
+
+span {
+    color: rgb(61, 63, 63);
+}
+
+
+
+.nav-links {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    margin: 10px;
+    background-color: violet;
+
+}
+
