@@ -7,43 +7,35 @@
 
  /*header*/
  .header {
-    background-color: rgb(12, 14, 13);
-    padding:0px ;
-    margin: 0px;
+    background-color: rgb(33, 34, 33);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem ;
+    margin: 0;
    
 }
 
 .main-title {
-    font-size: 25px;
+    font-size: 24px;
     font-family: 'Ubuntu', sans-serif;
     color: aliceblue;
-    padding: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     
+    
+
  }
 
-  span {
+ span {
     color: rgb(226, 230, 14);
-    display: flex-box;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    
+     
 }
 
 .a-nav {
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
     color: rgb(255, 254, 254);
-    display: inline-block;
-    vertical-align: middle;
     padding: 10px;
-    margin: 15px;
+    margin: 10px;
     
 }
 
@@ -52,6 +44,37 @@
     background-color: rgb(243, 243, 6);
     transition: margin-right 2s, color 1s;
     border-radius: 5px;
+}
+
+/*about section*/
+
+
+
+.banner {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: rgb(114, 133, 75);
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.banner p {
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+ .avatar{
+    max-width: 20%;
+    display: flexbox;
+    padding: 2%;
+
+    border-radius: 50%;
+ 
 }
 
 
@@ -67,30 +90,6 @@
 
 
 
-#about {
-    display: inline-block;
-    font-family: 'Ubuntu', sans-serif;
-    margin: 0px;
-    padding: 10px;
-    background-color: rgb(154, 113, 192);
-}
-
-#banner {
-    display: inline-block;
-    padding: 10px;
-    margin: 0px;
-    background-color: tomato;
-}
-
- img {
-    display: inline-block;
-
-    width: 20%;
-    background-color: blue;
-    border-radius: 50%;
-
-    
-}
 
 
 
