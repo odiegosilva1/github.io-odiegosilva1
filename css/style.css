@@ -101,34 +101,29 @@
 
 }
 
-
+ /*section porjects*/
 .projects {
  display: flex;
+ 
  width: 100%;
  background-color: rgb(224, 224, 223);
     
     
 }
  
-
 .projects ul {
     display: flex;
-    justify-content: space-between;
     padding: 2rem 0 0 2rem;
-    margin: 2rem;
+    margin: 0;
     flex-wrap: wrap;
-    
-    
-    
-   
-    
+      
 }
 
 .projects ul li {
     
     padding: 5rem;
-    margin: 1rem;
-    background-color: rgb(146, 62, 146);
+    margin: 2rem;
+    background-color: rgb(107, 58, 107);
     border-radius: 5%;
 }
 
@@ -150,8 +145,6 @@
     transition: margin-right 2s;
     border-radius: 5px;
    
-
-
 }
 
 
