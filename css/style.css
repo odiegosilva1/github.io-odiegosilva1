@@ -1,43 +1,45 @@
-
- /*header*/
- body {
-	background-color: #F2F5F7;
-    
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    font-size: 14px;
+    box-sizing: border-box;
 }
 
-.container {
-   
-	width: 94%;
-	margin: 0 auto;
-}
 
-.cabecalhoPrincipal {
+/*main-header*/
+
+ .main-header{
+	padding: 0.5rem;
     display: flex;
-	background-color: #FFF;
-	padding: 20px 0;
-}
+    align-items: center;
+    position: fixed;
+    top: 0;
+ }
 
-.cabecalhoPrincipal-titulo {
+ .main-title{
+	display: flex;
+	align-items: center;
+	font-family: ubuntu, sans-serif;
 	font-weight: bold;
-	font-size: 2em;
-	margin-bottom: 20px;
-}
-
-.cabecalhoPrincipal-titulo a {
+	font-size: 2rem;
 	text-decoration: none;
-    font-family: 'Ubuntu Mono', monospace;
-    font-weight: 700;
-	color: inherit;
-}
+	color: black;
+    
+ }
 
+ .itens-nav {
+	justify-content: space-between;
+	display: flexbox;
+	background-color: yellow;
 
-  /*icons nav*/
+	font-family: ubuntu, sans-serif;
+	font-weight: bold;
+	font-size: 1rem;
+	text-decoration: none;
+	color: black;
 
-
-
-
-
-
-
+ }
 
 
