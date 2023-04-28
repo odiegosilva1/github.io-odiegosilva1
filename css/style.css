@@ -1,8 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
   background: rgb(245, 238, 223);
   font-family: 'Ubuntu Mono', monospace;
   height: 100vh;
 
+}
+
+
+header {
+  height: 100vh;
 }
 
 .menu ul {
