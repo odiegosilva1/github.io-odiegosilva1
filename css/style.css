@@ -1,50 +1,7 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-body {
-  background: rgb(245, 238, 223);
-  font-family: 'Ubuntu Mono', monospace;
-  height: 100vh;
-
-}
-
-
-header {
-  height: 100vh;
-}
-
-.menu ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-.menu li {
-  list-style: none;
-  
-}
-
-a {
-  text-decoration: none;
-  border-radius: 10%;
-  padding: .5rem;
-  margin: auto;
-  color: #666;
-
-}
-
-a:hover {
-  background-color: rgb(31, 29, 27);
-  color: rgb(248, 244, 239);
-  transition: color 1s;
-}
-
-
-.site-subtitle,
-.site-title{
-  text-align: center;
+.main h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    text-align: center;
+    background-color: bisque;
 }
 
