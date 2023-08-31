@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    /*Elementos inline não se aplica margin auto */
+    background: url(../assets/bg-mobile.jpg) no-repeat top center/cover;
+}
+
+body * {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(255, 255, 255);
+} 
+
+#container {
+    width: 360px;
+    margin: auto;
+
+    padding-top: 56px ;
+}
+
+#profile {
+    text-align: center;
+    padding: 24px;
+    
+}
+
+#profile img {
+    width: 113px;
+    border-radius: 50%;
+   
+}
+
+#profile p {
+    font-weight: 500;
+    line-height: 24px;
+}
+
+/*--------Links-----------*/
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    display: flex;
+}
