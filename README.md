@@ -1,6 +1,6 @@
 ## 🔖 Layout
 
-!()[https://media3.giphy.com/media/kVSJpDuRaDYsc1vHg8/giphy.gif]
+![alt text](.png)
 
 ## 🚀 Tecnologias
 
