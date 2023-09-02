@@ -3,16 +3,25 @@
 
 }
 
+:root {
+    --text-color: white;
+    --bg-url: url(./assets/bg-mobile.jpg)
+}
+
+.light {
+    --text-color: black;
+    --bg-url: url(./assets/bg-mobile-light.jpg)
+}
 
 body {
 
     /*Elementos inline não se aplica margin auto */
-    background: url(../assets/bg-mobile.jpg) no-repeat top center/cover;
+    background: url(--bg-url) no-repeat top center/cover;
 }
 
 body * {
     font-family: 'Ubuntu', sans-serif;
-    color: rgb(255, 255, 255);
+    color: var(--text-color); 
 } 
 
 #container {
