@@ -37,7 +37,9 @@ body * {
 } 
 
 #container {
-    width: 360px;
+    width: 100%;
+    max-width: 580px;
+   
     margin: 36px  auto 0px;
     padding: 0 24px;
 
@@ -74,6 +76,10 @@ body * {
 }
 
 
+#switch  button:hover {
+    outline: 8px solid  var(--highlight-color);
+}
+
 
 #switch button{
     width: 32px;
@@ -87,12 +93,13 @@ body * {
     left: 0;
     z-index: 1;
     transform: translateY(-50%);
+
+    animation: slide-back 0.2s;
    
 }
 
 .light #switch button {
-    right: 0;
-    left: initial;
+animation: slide-in .4s forwards;
 }
 
 #switch span {
@@ -128,6 +135,7 @@ ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 
     padding: 16px 24px;
 
@@ -183,4 +191,25 @@ footer {
     text-align: center;
     opacity: 0.5;
     font-size: 13px;
+}
+
+
+/*----------Animation---------*/
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-out {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
+    }
 }
