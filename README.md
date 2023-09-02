@@ -1,6 +1,6 @@
 ## 🔖 Layout
 
-![alt text](../assets/projeto-layout.png)
+![alt text](./assets/projeto-layout.png)
 
 ## 🚀 Tecnologias
 
