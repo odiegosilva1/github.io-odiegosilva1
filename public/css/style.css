@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 
 }
@@ -110,11 +112,14 @@ body * {
 
 ul {
     list-style: none;
+
     margin: 30px  auto 0px;
     padding: 64px  2rem ;
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    
 
 
 }
