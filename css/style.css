@@ -1,215 +1,90 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-:root {
-    --text-color: white;
-    --bg-url: url(../assets/bg-mobile.jpg);
-    --stroke-color: rgba(255, 255, 255, 0.1);
-    --surface-color:  rgba(255, 255, 255, 0.356);
-    --surface-color-hover: rgba(0, 0, 0, 0.0.2);
-    --highlight-color: rgba(255, 255, 255, 0.2);
-    --switch-bg-url: url(../assets/moon-stars.svg);
-    
-}
-
-.light {
-    --text-color: black;
-    --bg-url: url(../assets/bg-mobile-light.jpg);
-    --stroke-color: rgba(0, 0, 0, 0.5);
-    --surface-color:  rgba(0, 0, 0, 0.0.5);
-    --highlight-color: rgba(255, 255, 255, 0.1);
-    --switch-bg-url: url(../assets/sun.svg);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-
-    /*Elementos inline não se aplica margin auto */
-    background: var(--bg-url) no-repeat top center/cover;
+  background-color: rgb(0, 0, 0);
+  font-family: "Roboto", serif;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-body * {
-    font-family: 'Ubuntu', sans-serif;
-    color: var(--text-color); 
-} 
-
-#container {
-    width: 100%;
-    max-width: 580px;
-   
-    margin: 36px  auto 0px;
-    padding: 0 24px;
-
-    
+:root {
+  background-color: rgb(55, 255, 5);
 }
 
-/*-------Profile------*/
-
-#profile {
-    text-align: center;
-    padding: 24px;
-    
+h2 {
+  color: rgb(2, 255, 23);
+  justify-content: center;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
 }
 
-#profile img {
-    width: 113px;
-    border-radius: 50%;
-   
+.main-title {
+  color: rgb(2, 255, 23);
 }
 
-#profile p {
-    font-weight: 500;
-    line-height: 24px;
+p,
+li,
+h1 {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
 }
-
-
-/*--------switch-----------*/
-#switch {
-    position: relative;
-    width: 64px;
-
-    margin: 0 auto;
-
-}
-
-
-#switch  button:hover {
-    outline: 8px solid  var(--highlight-color);
-}
-
-
-#switch button{
-    width: 32px;
-    height: 32px;
-    background: white var(--switch-bg-url) no-repeat center;
-    border: 0;
-    border-radius: 50%;
-
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: 1;
-    transform: translateY(-50%);
-
-    animation: slide-back 0.2s;
-   
-}
-
-.light #switch button {
-animation: slide-in .4s forwards;
-}
-
-#switch span {
-    display: block;
-    width: 64px;
-    height: 24px;
-    background: url(--surface-color);
-    border: 1px solid var(--stroke-color);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 9999px;
-}
-
-
-
-/*--------Links-----------*/
 
 ul {
-    list-style: none;
-
-    margin: 30px  auto 0px;
-    padding: 64px  2rem ;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-
-    
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-ul li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-
-    padding: 16px 24px;
-
-    background: var(--surface-color);
-    border: 1px solid var(--stroke-color);
-    border-radius: 8px;
-
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    
-    text-decoration: none;
-    font-weight: 500;
-
-    transition: background 0.5s; 
+a {
+  list-style-type: none;
+  color: rgb(2, 255, 23);
+  font-size: 1.8rem;
 }
 
-/*--------Sudo Selector-----------*/
-
-ul li a:hover {
-    background: var(--surface-color-hover);
-    border: 1.5px solid var(--stroke-color);
+span {
+  color: rgb(2, 255, 23);
 }
 
-/*--------Social-----------*/
-
-#social-links {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-
-    padding: 24px 0;
-
-    font-size: 24px;
+.social-section {
+  margin: 1rem;
+  justify-content: space-between;
 }
 
-#social-links a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
+.about-section {
+  justify-content: left;
 
-    transition: background 0.2s;
-    border-radius: 50%;
+  padding: 1rem;
+  max-width: 512px;
+}
+.about-section,
+p {
+  color: yellow;
+}
+header {
+  text-align: center;
+  padding: 1rem;
 }
 
-#social-links a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    
-} 
+main {
+  padding: 1.5rem;
+}
 
 footer {
-    padding: 24px 0;
-    text-align: center;
-    opacity: 0.5;
-    font-size: 13px;
-}
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 
-
-/*----------Animation---------*/
-
-@keyframes slide-in {
-    from {
-        left: 0;
-    }
-    to {
-        left: 50%;
-    }
-}
-
-@keyframes slide-out {
-    from {
-        left: 50%;
-    }
-    to {
-        left: 0;
-    }
+  color: rgb(9, 255, 0);
+  text-align: center;
+  padding: 1rem;
 }
