@@ -29,14 +29,6 @@ h2 {
   color: rgb(2, 255, 23);
 }
 
-p,
-li,
-h1 {
-  color: aliceblue;
-  display: flex;
-  justify-content: center;
-}
-
 ul {
   display: flex;
   justify-content: center;
@@ -67,13 +59,19 @@ span {
 }
 .about-section,
 p {
-  color: yellow;
+  color: rgb(9, 255, 0);
 }
 header {
   text-align: center;
   padding: 1rem;
 }
-
+.about-txt {
+  font-size: 16px; /* Tamanho da fonte */
+  line-height: 1.6; /* Espaçamento entre linhas */
+  color: rgb(9, 255, 0); /* Cor do texto */
+  text-align: justify; /* Alinhamento do texto */
+  margin: 20px 0;
+}
 main {
   padding: 1.5rem;
 }
@@ -87,4 +85,8 @@ footer {
   color: rgb(9, 255, 0);
   text-align: center;
   padding: 1rem;
+}
+
+.footer-txt {
+  color: rgb(9, 255, 0);
 }
